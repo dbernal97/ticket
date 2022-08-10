@@ -1,0 +1,77 @@
+@import "node_modules/@bbva-web-components/bbva-foundations-sass/main";
+
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+:host([hidden]), [hidden] {
+  display: none !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+$gray-color: #666666;
+$card-gray-color: #F4F4F4;
+
+.header{
+  #header-title{
+    background-color: #072146;
+  }
+
+  section{
+    text-align: center;
+  }
+}
+
+.main-container{
+  padding: 5px;
+
+  .info-section{
+    .link-info{
+      margin: 10px 0;
+    }
+
+    #button{
+      margin: 15px 0;
+    }
+
+    #text-code{
+      margin-bottom: 15px;
+    }
+  }
+
+  .panel-section{
+    #panel-title{
+      height: 32px;
+      color: #121212;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 800px){
+  .main-container{
+    display: flex;
+    margin-left: 5%;
+
+    .info-section{
+      margin-top: 20px;
+      width: 50%;
+      padding: 0 20px;
+    }
+
+    .panel-section{
+      width: 40%;
+      padding: 0 20px;
+    }
+  }
+}
+
+
